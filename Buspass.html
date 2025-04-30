@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <img src="https://www.tgsrtc.telangana.gov.in/tsrtc-logo@5x.webp" height="60px" width="60px" alt="img">
+        <h2> TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+        <h2>GENERAL BUS PASS APPLICATION</h2>
+        <form action="./Welcomepage.html">
+        <fieldset>
+        <legend>Application Details</legend>
+        <label for="Name">Name <span style="color: red;">*</span></label>
+        <input type="text" name="Name" id="Name" required>
+        <label for="Father's/ Guardian's Name">Father's/ Guardian's Name <span style="color: red;">*</span></label>
+        <input type="text" name="Father's/ Guardian's Name" id="Father's/ Guardian's Name" required><br>
+        <label for="DOB">Date of birth<span style="color: red;">*</span></label>
+        <input type="Numbers" name="DOB" id="DOB" required>
+        <label for="gender">Gender<span style="color: red;">*</span></label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="male" required>
+        <label for="male">Female</label><br>
+        <label for="Age As on">Age As on:</label>
+        <input type="number" name="Year(s)" id="Year" style="width: 20px;" minlength="0" maxlength="2" required>
+        <label for="Year">Year(s)</label>
+        <input type="number" name="Month(s)" id="Month" style="width: 20px;" minlength="0" maxlength="2" required>
+        <label for="Month">Month(s)</label>
+        <input type="number" name="Day(s)" id="Day" style="width: 20px;" minlength="0" maxlength="2" required>
+        <label for="Day">day(s)</label>
+        <label for="Aadhar No">Aadhar No:</label>
+        <input type="text" name="Aadhar No" id="Aadhar No" required><br>
+        <label for="WhatsApp No">WhatsApp No <span style="color: red;">*</span></label>
+        <input type="text" name="WhatsApp No" id="WhatsApp No" required>
+        <label for="E-mail Id">E-mail Id <span style="color: red;">*</span></label>
+        <input type="email" name="E-mail Id" id="E-mail Id" required><br>
+        <label for="Photo">Photo <span style="color: red;">*</span></label>
+        <input type="file" name="Photo" id="Photo" accept=".jpg, .png" required>
+       
+    </fieldset><br>
+    <fieldset>
+        <legend>Residential Address Details</legend>
+        <label for="Applicant's Address">Applicant's Address<span style="color: red;">*</span></label>
+        <textarea name="Applicant's Address" id="Applicant's Address" cols="20px" rows="8px" ></textarea>
+        <label for="District">District<span style="color: red;">*</span></label>
+        <select name="District" id="District">
+        <option value=""Selected disabled>---Select---</option>
+        <option value="Anantapur">Anantapur</option>
+        <option value="Kurnool">Kurnool</option>
+        <option value="Kadapa">Kadapa</option>
+        </select><br>
+        
+        <label for="Mandal">Mandal<span style="color: red;">*</span></label>
+        <select name="Mandal" id="Mandal" required>
+        <option value=""Selected disabled>---Select---</option>
+        <optgroup label="Mandals in Anantapur"></optgroup>
+        <option value="Guntakal">Guntakal</option>
+        <option value="Gooty">Gooty</option>
+        <option value="Tadipatri">Tadipatri</option>
+        <optgroup label="Mandals in Kurnool"></optgroup>
+        <option value="Adoni">Adoni</option>
+        <option value="Pattikonda">Pattikonda</option>
+        <option value="Yemmiganur">Yemmiganur</option><br>
+        <optgroup label="Mandals in Kadapa"></optgroup>
+        <option value="Badvel">Badvel</option>
+        <option value="Jammalamadugu">Jammalamadugu</option>
+        <option value="Pulivendula">Pulivendula</option><br>
+    </select>
+    <label for="Villagae">Village<span style="color: red;">*</span></label>
+        <select name="Village" id="Village">
+        <option value=""Selected disabled>---Select---</option>
+        <option value="Guntakal">Anantapur</option>
+        <option value="Adoni">Kurnool</option>
+        <option value="Pulivendula">Kadapa</option>
+        </select><br>
+        <label for="Pincode">Pincode<span style="color: red;">*</span></label>
+        <input type="number" name="Year(s)" id="Pincode"  minlength="0" maxlength="6" required>
+        </fieldset><br>
+        <fieldset>
+            <legend>Pass Type Details</legend>
+            <label for="City">City<span style="color: red;">*</span></label>
+        <select name="City" id="City">
+        <option value=""Selected disabled>---Select---</option>
+        <option value="Anantapur">Anantapur</option>
+        <option value="Kurnool">Kurnool</option>
+        <option value="Kadapa">Kadapa</option>
+        </select><br>
+        <label for="Pass Type">Pass Type<span style="color: red;">*</span></label>
+        <select name="Pass Type" id="Pass Type">
+        <option value=""Selected disabled>---Select---</option>
+        <option value="GREATER PASS">GREATER PASS</option>
+        <option value="METRO EXPRESS PASS">METRO EXPRESS PASS</option>
+        <option value="ORDINARY PASS">ORDINARY PASS</option>
+        </select>
+        </fieldset><br>
+        <fieldset>
+            <legend>Mode of Payment & Pass Collection</legend>
+            <label for="Payment Mode">Payment Mode<span style="color: red;">*</span></label>
+            <select name="Payment Mode" id="Payment Mode">
+                <option value=""Selected disabled>Select Payment Mode</option>
+                <option value="Payment at Counter">Payment at Counter</option>
+               </select><br>
+                <label for="Pass Delivery Mode">Pass Delivery Mode<span style="color: red;">*</span></label>
+                <select name="Pass Delivery Mode" id="Pass Delivery Mode">
+                    <option value=""Selected disabled>Select Pass Delivery Mode</option>
+                    <option value="At Counter">At Counter</option>
+                    </select><br>
+                    <label for="Center at which you want to Collect Pass">Center at which you want to Collect Pass<span style="color: red;">*</span></label>
+                <select name="Center at which you want to Collect Pass" id="Center at which you want to Collect Pass">
+                    <option value=""Selected disabled>---Select---</option>
+                    <option value="At Counter">At Counter</option>
+                    <option value="At Counter">Via Online</option>
+                    <option value="At Counter">Through Post</option>
+                    </select>
+        </fieldset><br>
+        <img src="data:image/jpeg;base64,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" alt="img"> <img src="https://tgsrtcpass.com/images/reload.png" height="32px
+        " alt=""><br> <br>
+        <input type="text" maxlength="6" required><br> <br>
+        <input type="submit" value="submit">
+    </center>
+</form>
+    <form action="./Welcomepage.html"></form>
+
+</body>
+</html>
